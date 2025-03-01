@@ -1,0 +1,9 @@
+---
+ - hosts: linux
+   become: yes
+   tasks:
+     - name: instalacion apache2
+       command: /bin/echo hello world
+#       apt:
+#         name: apache2
+#         state: present
